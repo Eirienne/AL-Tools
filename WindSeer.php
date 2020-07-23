@@ -1,5 +1,5 @@
 <?php 
 
-include_once(“Pages/home.html”); 
+include_once("Pages/Home.html"); 
 
 ?>
