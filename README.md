@@ -1,2 +1,6 @@
-# WindSeer
-WindSeer Personal Website
+# Eirienne
+Eirienne Personal Website
+
+To-Do List
+-. Update Navbar and Icon
+-. Make Azur Lane Hub
