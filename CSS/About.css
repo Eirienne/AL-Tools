@@ -1,0 +1,44 @@
+body {
+    background-color: rgba(214, 189, 189, 0.815);
+}
+
+.about-me {
+    margin-top: 30px;
+}
+
+.bio-column {
+    position: absolute;
+    background-color: white;
+
+    border-color: black;
+
+    margin-left: 120px;
+
+    height: 800px;
+    width: 1000px;
+}
+
+.bio-header {
+    text-align: center;
+
+    font-size: 35px;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; 
+    font-style: normal; 
+    font-variant: small-caps; 
+    font-weight: 400;
+}
+
+.bio-text {
+
+    font-size: 35px;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; 
+    font-style: normal; 
+    font-variant: small-caps; 
+    font-weight: 400;
+}
+
+.twitter-timeline {
+    position: relative;
+
+    margin-left: 70%;
+}

@@ -1,0 +1,26 @@
+.footer {
+    /* position: relative; */
+    background-color: black;
+
+    margin-top: 20px;
+
+    flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+
+    height: 100px;
+
+    left: 0;
+    bottom: 0;
+
+    text-align: center;
+}
+
+.footer-text {
+    padding-top: 10px;
+
+    color: white;
+
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; 
+    font-style: normal; 
+    font-variant: small-caps; 
+    font-weight: 400;
+}
