@@ -1,0 +1,148 @@
+body {
+    background-color: rgba(235, 170, 170, 0.815);
+}
+
+.header-space {
+    margin-top: 5%;
+}
+
+.content {
+    /* margin-top: 10%; */
+    margin: auto;
+    background-color: white;
+    border-style: dotted;
+
+    height: 800px;
+    width: 800px;
+}
+
+.header-text {
+    text-align: center;
+
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; 
+    font-style: normal; 
+    font-variant: small-caps; 
+    font-weight: 400; 
+    line-height: 24.8px;
+}
+
+.characters-reload {
+    margin-top: 5%;
+    margin-left: 7%;
+    
+    position: absolute;
+
+    font-size: 20px;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; 
+    font-style: normal; 
+    font-variant: small-caps; 
+    font-weight: 400; 
+    line-height: 24.8px;
+}
+
+#characters {
+    margin-left: 120px;
+}
+
+.skill-bonus {
+    margin-top: 8%;
+    margin-left: 7%;
+    
+    position: absolute;
+
+    font-size: 20px;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; 
+    font-style: normal; 
+    font-variant: small-caps; 
+    font-weight: 400; 
+    line-height: 24.8px;
+}
+
+#skillbonus {
+    margin-left: 330px;
+}
+
+.cd-red {
+    margin-top: 10%;
+    margin-left: 7%;
+    
+    position: absolute;
+
+    font-size: 20px;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; 
+    font-style: normal; 
+    font-variant: small-caps; 
+    font-weight: 400; 
+    line-height: 24.8px;
+}
+
+#cdred {
+    margin-left: 235px;
+}
+
+.slot-detail {
+
+    position: absolute;
+
+    margin-top: 14.8%;
+    margin-left: 7%;
+
+    font-size: 20px;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; 
+    font-style: normal; 
+    font-variant: small-caps; 
+    font-weight: 400; 
+    line-height: 24.8px;
+}
+
+#slot2 {
+    margin-top: 34%;
+}
+
+#slot3 {
+    margin-top: 37%;
+}
+
+.planeslot {
+    margin-top: 15%;
+    margin-left: 20%;
+    position: absolute;
+
+}
+
+.plane1count {
+    margin-top: 5px;
+    margin-left: 81%;
+}
+
+.plane2 {
+    margin-top: 60px;
+
+    font-size: 20px;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; 
+    font-style: normal; 
+    font-variant: small-caps; 
+    font-weight: 400; 
+    line-height: 24.8px;
+}
+
+.plane2count {
+    margin-top: 5px;
+    margin-left: 81%;
+}
+
+.plane3 {
+    margin-top: 60px;
+
+    font-size: 20px;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; 
+    font-style: normal; 
+    font-variant: small-caps; 
+    font-weight: 400; 
+    line-height: 24.8px;
+}
+
+.plane3count {
+    margin-top: 5px;
+    margin-left: 81%;
+}

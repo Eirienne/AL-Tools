@@ -8,24 +8,37 @@
     <link rel="stylesheet" href="CSS/Footer.css">
 
     <link rel='shortcut icon' type='image/x-icon' href='Images/Icon/ChatStamp024_en.ico'>
+
+    <script src="JavaScript/Navbar.js"></script>
     <title>Eirienne</title>
 </head>
 <body>
 
     <div class="navbar">
-        <a href="index.html">Home</a>
+        <a href="../index.html">Home</a>
         <a href="Pages/About.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Eirienne Tools &darr;
+              <i class="fa fa-caret-down"></i>
+            </button>
+
+            <div class="dropdown-content" id="myDropdown">
+              <a href="Pages/AzurLaneHub.html">Azur Lane Hub</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div> 
     </div>
 
    <div class="container">
         <div class="icon-header-text">
             <a>Eirienne Tool</a>
-            <!-- <img id="logo" src="Images/Screenshot (147).png"> -->
+            <h1>[W.I.P]</h1>
         </div>
 
         <div class="icon-button">
             <div class="button-row">
-                <a href="Pages/About.html">
+                <a href="Pages/AzurLaneHub.html">
                     <img id="button1" src="Images/Screenshot (147).png">
                 </a>
 
@@ -42,11 +55,11 @@
         </div>
     </div>    
     
-     <div class="footer">
+     <!-- <div class="footer">
         <div class="footer-text">
             <h1>Credit Eirienne 2020</h1> 
         </div>
-    </div>
+    </div> -->
 
 </body>
 </html>

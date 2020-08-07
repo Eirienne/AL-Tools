@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Navbar.css">
+    <link rel="stylesheet" href="../CSS/AirStrikeCalc.css">
+    
+    <link rel='shortcut icon' type='image/x-icon' href='../Images/Icon/ChatStamp024_en.ico'>
+
+    <script src="../JavaScript/Navbar.js"></script>
+    <script src="../JavaScript/AirStrikeCalc.js"></script>
+    <title>Air Strike Calculator</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="About.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Eirienne Tools &darr;
+              <i class="fa fa-caret-down"></i>
+            </button>
+
+            <div class="dropdown-content" id="myDropdown">
+              <a href="AzurLaneHub.html">Azur Lane Hub</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="header-space"></div>
+    <div class="content">
+        <h1 class="header-text">Air Strike CoolDown Calculator</h1>
+        <div class="characters-reload">
+            <label>Character Reload Stat : &MediumSpace;</label>
+            <select id="characters" onchange="getCharRld();">
+                <option value="131">Akagi</option>
+                <option value="131">Akagi (Muse)</option>
+                <option value="124">Akagi-chan</option>
+            </select>
+
+            <input type="text" size="7" name="character-rld" id="character-rld" value="131">
+        </div>
+
+        <div class="skill-bonus">
+            <label>Skill Bonus : &MediumSpace;</label>
+
+            <input type="skillbonus" size="7" name="skillbonus" id="skillbonus" value="10.90">
+        </div>
+
+        <div class="cd-red">
+            <label>CoolDown Reduction : &MediumSpace;</label>
+
+            <input type="text" size="7" name="cdred" id="cdred" value="10.90">
+        </div>
+
+        <div class="slot-detail">
+            
+            <div id="slot1">
+                <div>
+                    <label>First Plane Slot : &MediumSpace;</label>
+                </div>
+                <div>
+                    <label>Number of Plane : &MediumSpace;</label>
+                </div>
+            </div>
+
+            <div id="slot2">
+                <div>
+                    <label>Second Plane Slot : &MediumSpace;</label>
+                </div>
+                <div>
+                    <label>Number of Plane : &MediumSpace;</label>
+                </div>
+            </div>
+
+            <div id="slot3">
+                <div>
+                    <label>Third Plane Slot : &MediumSpace;</label>
+                </div>
+                <div>
+                    <label>Number of Plane : &MediumSpace;</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="planeslot">
+            <div class="plane1">
+                <select id="plane1" onchange="getPlaneCD();">
+                    <!-- Fighters -->
+                    <option value="Fighters" disabled class="disabled-option">Fighters</option>
+                    <option value="10.90">F6F Hellcat</option>
+                    <option value="10.20">VF-17 ("Pirate Squad")</option>
+                    <option value="10.60">Seafang</option>
+                    <option value="10.61">Sea Fury</option>
+                    <option value="10.44">A7M Reppuu</option>
+                    <option value="8.98">XF5F Skyrocket</option>
+                    <option value="9.24">Messerschmitt Me-155A</option>
+                    <option value="9.44">F2A Buffalo (Thatch Squadron)</option>
+    
+                    <!-- Dive Bomber -->
+                    <option value="DiveBomber" disabled class="disabled-option">Dive Bombers</option>
+                    <option value="11.88">SB2C Helldiver</option>
+                    <option value="10.44">Comet / D4Y Suisei</option>
+                    <option value="11.11">Fairey Firefly</option>
+                    <option value="10.38">Fairey Barracuda (831 Squadron)</option>
+                    <option value="9.18">Fairey Fulmar</option>
+                    <option value="11.71">SBD Dauntless (McClusky)</option>
+    
+                    <!-- Torpedo Bomber -->
+                    <option value="TorpedoBomber" disabled class="disabled-option">Torpedo Bombers</option>
+                    <option value="10.31">Barracuda</option>
+                    <option value="9.98">Fairey Albacore</option>
+                    <option value="11.37">Aichi B7A Ryusei</option>
+                    <option value="10.97">Swordfish (818 Squadron)</option>
+                    <option value="12.04">TBM Avenger (VT-18 Squadron)</option>
+                    <option value="12.04">Torpedo VT-8 Squadron</option>
+                    
+                    <!-- ETC -->
+                    <option value="Don't Use Slot">Don't Use Slot</option>
+                    <option value="">Other</option>
+                </select>
+    
+                <input type="text" size="7" name="plane1cd" id="plane1cd" value="10.90">
+
+                <div class="plane1count">
+                    <input type="plane1number" size="3" name="plane1number" id="plane1number" value="3">
+                </div>
+            </div>
+    
+            <div class="plane2">
+                <select id="plane2" onchange="getPlane2CD();">
+                    <!-- Fighters -->
+                    <option value="Fighters" disabled class="disabled-option">Fighters</option>
+                    <option value="10.90">F6F Hellcat</option>
+                    <option value="10.20">VF-17 ("Pirate Squad")</option>
+                    <option value="10.60">Seafang</option>
+                    <option value="10.61">Sea Fury</option>
+                    <option value="10.44">A7M Reppuu</option>
+                    <option value="8.98">XF5F Skyrocket</option>
+                    <option value="9.24">Messerschmitt Me-155A</option>
+                    <option value="9.44">F2A Buffalo (Thatch Squadron)</option>
+    
+                    <!-- Dive Bomber -->
+                    <option value="DiveBomber" disabled class="disabled-option">Dive Bombers</option>
+                    <option value="11.88">SB2C Helldiver</option>
+                    <option value="10.44">Comet / D4Y Suisei</option>
+                    <option value="11.11">Fairey Firefly</option>
+                    <option value="10.38">Fairey Barracuda (831 Squadron)</option>
+                    <option value="9.18">Fairey Fulmar</option>
+                    <option value="11.71">SBD Dauntless (McClusky)</option>
+    
+                    <!-- Torpedo Bomber -->
+                    <option value="TorpedoBomber" disabled class="disabled-option">Torpedo Bombers</option>
+                    <option value="10.31">Barracuda</option>
+                    <option value="9.98">Fairey Albacore</option>
+                    <option value="11.37">Aichi B7A Ryusei</option>
+                    <option value="10.97">Swordfish (818 Squadron)</option>
+                    <option value="12.04">TBM Avenger (VT-18 Squadron)</option>
+                    <option value="12.04">Torpedo VT-8 Squadron</option>
+                    
+                    <!-- ETC -->
+                    <option value="Don't Use Slot">Don't Use Slot</option>
+                    <option value="">Other</option>
+                </select>
+    
+                <input type="text" size="7" name="plane2cd" id="plane2cd" value="10.90">
+
+                <div class="plane2count">
+                    <input type="plane2number" size="3" name="plane2number" id="plane2number" value="3">
+                </div>
+            </div>
+    
+            <div class="plane3">
+                <select id="plane3" onchange="getPlane3CD();">
+                    <!-- Fighters -->
+                    <option value="Fighters" disabled class="disabled-option">Fighters</option>
+                    <option value="10.90">F6F Hellcat</option>
+                    <option value="10.20">VF-17 ("Pirate Squad")</option>
+                    <option value="10.60">Seafang</option>
+                    <option value="10.61">Sea Fury</option>
+                    <option value="10.44">A7M Reppuu</option>
+                    <option value="8.98">XF5F Skyrocket</option>
+                    <option value="9.24">Messerschmitt Me-155A</option>
+                    <option value="9.44">F2A Buffalo (Thatch Squadron)</option>
+    
+                    <!-- Dive Bomber -->
+                    <option value="DiveBomber" disabled class="disabled-option">Dive Bombers</option>
+                    <option value="11.88">SB2C Helldiver</option>
+                    <option value="10.44">Comet / D4Y Suisei</option>
+                    <option value="11.11">Fairey Firefly</option>
+                    <option value="10.38">Fairey Barracuda (831 Squadron)</option>
+                    <option value="9.18">Fairey Fulmar</option>
+                    <option value="11.71">SBD Dauntless (McClusky)</option>
+    
+                    <!-- Torpedo Bomber -->
+                    <option value="TorpedoBomber" disabled class="disabled-option">Torpedo Bombers</option>
+                    <option value="10.31">Barracuda</option>
+                    <option value="9.98">Fairey Albacore</option>
+                    <option value="11.37">Aichi B7A Ryusei</option>
+                    <option value="10.97">Swordfish (818 Squadron)</option>
+                    <option value="12.04">TBM Avenger (VT-18 Squadron)</option>
+                    <option value="12.04">Torpedo VT-8 Squadron</option>
+                    
+                    <!-- ETC -->
+                    <option value="Don't Use Slot">Don't Use Slot</option>
+                    <option value="">Other</option>
+                </select>
+    
+                <input type="text" size="7" name="plane3cd" id="plane3cd" value="10.90">
+
+                <div class="plane3count">
+                    <input type="plane3number" size="3" name="plane3number" id="plane3number" value="2">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
