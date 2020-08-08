@@ -1,8 +1,4 @@
 
-body {
-    background-color: rgba(235, 170, 170, 0.815);
-}
-
 .container {
     margin: auto;
     text-align: center;
@@ -25,40 +21,4 @@ body {
 
 .icon-button {
     padding-top: 80px;
-}
-
-.button-row {
-    padding-top: 30px;
-}
-
-#button1 {
-    position: relative;
-
-    /* left: 25px; */
-
-    height: 300px;
-    width: 300px;
-
-    opacity: 50%;
-}
-
-#button2 {
-    position: relative;
-
-    padding-left: 25px;
-
-    height: 300px;
-    width: 300px;
-
-    opacity: 50%;
-}
-
-#button1:hover {
-    /* box-shadow: black 2px 0px 10px; */
-    opacity: 100%;
-}
-
-#button2:hover {
-    /* box-shadow: black 2px 0px 10px; */
-    opacity: 100%;
 }
