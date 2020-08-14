@@ -1,148 +1,78 @@
-body {
-    background-color: rgba(235, 170, 170, 0.815);
-}
-
-.header-space {
+.space {
     margin-top: 5%;
 }
 
 .content {
-    /* margin-top: 10%; */
-    margin: auto;
-    background-color: white;
-    border-style: dotted;
 
-    height: 800px;
-    width: 800px;
+    background-color: white;
+    height: 700px;
+    width: 1200px;
+
+    margin: 0 auto;
+
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        width: 100%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
+
+.column {
+    width: 33%;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.rows {
+    text-align: center;
+}
+
+.row3 {
+    text-align: center;
+}
+
+.calculateBtn {
+    text-align: center;
 }
 
 .header-text {
-    text-align: center;
+    margin: 0 auto;
 
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; 
-    font-style: normal; 
-    font-variant: small-caps; 
-    font-weight: 400; 
-    line-height: 24.8px;
+    text-align: center;
 }
 
 .characters-reload {
-    margin-top: 5%;
-    margin-left: 7%;
-    
-    position: absolute;
-
-    font-size: 20px;
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; 
-    font-style: normal; 
-    font-variant: small-caps; 
-    font-weight: 400; 
-    line-height: 24.8px;
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
-#characters {
-    margin-left: 120px;
-}
-
-.skill-bonus {
-    margin-top: 8%;
-    margin-left: 7%;
-    
-    position: absolute;
-
-    font-size: 20px;
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; 
-    font-style: normal; 
-    font-variant: small-caps; 
-    font-weight: 400; 
-    line-height: 24.8px;
-}
-
-#skillbonus {
-    margin-left: 330px;
-}
-
-.cd-red {
-    margin-top: 10%;
-    margin-left: 7%;
-    
-    position: absolute;
-
-    font-size: 20px;
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; 
-    font-style: normal; 
-    font-variant: small-caps; 
-    font-weight: 400; 
-    line-height: 24.8px;
-}
-
-#cdred {
-    margin-left: 235px;
-}
-
-.slot-detail {
-
-    position: absolute;
-
-    margin-top: 14.8%;
-    margin-left: 7%;
-
-    font-size: 20px;
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; 
-    font-style: normal; 
-    font-variant: small-caps; 
-    font-weight: 400; 
-    line-height: 24.8px;
-}
-
-#slot2 {
-    margin-top: 34%;
-}
-
-#slot3 {
-    margin-top: 37%;
-}
-
-.planeslot {
-    margin-top: 15%;
-    margin-left: 20%;
-    position: absolute;
-
-}
-
-.plane1count {
-    margin-top: 5px;
-    margin-left: 81%;
+.plane1 {
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .plane2 {
-    margin-top: 60px;
-
-    font-size: 20px;
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; 
-    font-style: normal; 
-    font-variant: small-caps; 
-    font-weight: 400; 
-    line-height: 24.8px;
-}
-
-.plane2count {
-    margin-top: 5px;
-    margin-left: 81%;
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .plane3 {
-    margin-top: 60px;
-
-    font-size: 20px;
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; 
-    font-style: normal; 
-    font-variant: small-caps; 
-    font-weight: 400; 
-    line-height: 24.8px;
-}
-
-.plane3count {
-    margin-top: 5px;
-    margin-left: 81%;
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }

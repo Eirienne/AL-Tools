@@ -1,8 +1,8 @@
 
-.container {
+/* .container {
     margin: auto;
     text-align: center;
-}
+} */
 
 .icon-header-text {
 
@@ -19,6 +19,25 @@
     line-height: 24.8px;
 }
 
-.icon-button {
-    padding-top: 80px;
+.menu{
+    /* margin-left: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    left: 10%;
+}
+
+.menu-button img {
+    margin-top: 20px;
+
+    width: 500px;
+    opacity: 75%;
+    border-style: dotted;
+}
+
+.menu-button img:hover {
+    opacity: 100%;
 }
