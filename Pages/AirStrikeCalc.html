@@ -22,6 +22,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
   <title>Air Strike Calculator</title>
 </head>
 
@@ -84,10 +88,8 @@
       </div>
 
       <div class="column">
-        <select id="characters" onchange="getCharRld();">
-          <option value="131">Akagi</option>
-          <option value="131">Akagi (Muse)</option>
-          <option value="124">Akagi-chan</option>
+        <select id="characters" onchange="getCharRld()">
+          <option value="Fighters" disabled class="disabled-option">Fighters</option>
         </select>
 
         <div class="space"></div>
@@ -100,38 +102,6 @@
 
         <!-- Plane 1 -->
         <select id="plane1" onchange="getPlaneCD();">
-          <!-- Fighters -->
-          <option value="Fighters" disabled class="disabled-option">Fighters</option>
-          <option value="10.90">F6F Hellcat</option>
-          <option value="10.20">VF-17 ("Pirate Squad")</option>
-          <option value="10.60">Seafang</option>
-          <option value="10.61">Sea Fury</option>
-          <option value="10.44">A7M Reppuu</option>
-          <option value="8.98">XF5F Skyrocket</option>
-          <option value="9.24">Messerschmitt Me-155A</option>
-          <option value="9.44">F2A Buffalo (Thatch Squadron)</option>
-
-          <!-- Dive Bomber -->
-          <option value="DiveBomber" disabled class="disabled-option">Dive Bombers</option>
-          <option value="11.88">SB2C Helldiver</option>
-          <option value="10.44">Comet / D4Y Suisei</option>
-          <option value="11.11">Fairey Firefly</option>
-          <option value="10.38">Fairey Barracuda (831 Squadron)</option>
-          <option value="9.18">Fairey Fulmar</option>
-          <option value="11.71">SBD Dauntless (McClusky)</option>
-
-          <!-- Torpedo Bomber -->
-          <option value="TorpedoBomber" disabled class="disabled-option">Torpedo Bombers</option>
-          <option value="10.31">Barracuda</option>
-          <option value="9.98">Fairey Albacore</option>
-          <option value="11.37">Aichi B7A Ryusei</option>
-          <option value="10.97">Swordfish (818 Squadron)</option>
-          <option value="12.04">TBM Avenger (VT-18 Squadron)</option>
-          <option value="12.04">Torpedo VT-8 Squadron</option>
-
-          <!-- ETC -->
-          <option value="Don't Use Slot">Don't Use Slot</option>
-          <option value="">Other</option>
         </select>
 
         <input type="plane1number" size="3" name="plane1number" id="plane1number" value="3">
@@ -140,37 +110,6 @@
 
         <!-- Plane 2 -->
         <select id="plane2" onchange="getPlane2CD();">
-          <!-- Fighters -->
-          <option value="Fighters" disabled class="disabled-option">Fighters</option>
-          <option value="10.90">F6F Hellcat</option>
-          <option value="10.20">VF-17 ("Pirate Squad")</option>
-          <option value="10.60">Seafang</option>
-          <option value="10.61">Sea Fury</option>
-          <option value="10.44">A7M Reppuu</option>
-          <option value="8.98">XF5F Skyrocket</option>
-          <option value="9.24">Messerschmitt Me-155A</option>
-          <option value="9.44">F2A Buffalo (Thatch Squadron)</option>
-
-          <!-- Dive Bomber -->
-          <option value="DiveBomber" disabled class="disabled-option">Dive Bombers</option>
-          <option value="11.88">SB2C Helldiver</option>
-          <option value="10.44">Comet / D4Y Suisei</option>
-          <option value="11.11">Fairey Firefly</option>
-          <option value="10.38">Fairey Barracuda (831 Squadron)</option>
-          <option value="9.18">Fairey Fulmar</option>
-          <option value="11.71">SBD Dauntless (McClusky)</option>
-          <!-- Torpedo Bomber -->
-          <option value="TorpedoBomber" disabled class="disabled-option">Torpedo Bombers</option>
-          <option value="10.31">Barracuda</option>
-          <option value="9.98">Fairey Albacore</option>
-          <option value="11.37">Aichi B7A Ryusei</option>
-          <option value="10.97">Swordfish (818 Squadron)</option>
-          <option value="12.04">TBM Avenger (VT-18 Squadron)</option>
-          <option value="12.04">Torpedo VT-8 Squadron</option>
-
-          <!-- ETC -->
-          <option value="Don't Use Slot">Don't Use Slot</option>
-          <option value="">Other</option>
         </select>
 
         <input type="plane2number" size="3" name="plane2number" id="plane2number" value="3">
@@ -178,52 +117,22 @@
         <div class="space"></div>
         <!-- Plane 3 -->
         <select id="plane3" onchange="getPlane3CD();">
-          <!-- Fighters -->
-          <option value="Fighters" disabled class="disabled-option">Fighters</option>
-          <option value="10.90">F6F Hellcat</option>
-          <option value="10.20">VF-17 ("Pirate Squad")</option>
-          <option value="10.60">Seafang</option>
-          <option value="10.61">Sea Fury</option>
-          <option value="10.44">A7M Reppuu</option>
-          <option value="8.98">XF5F Skyrocket</option>
-          <option value="9.24">Messerschmitt Me-155A</option>
-          <option value="9.44">F2A Buffalo (Thatch Squadron)</option>
-          <!-- Dive Bomber -->
-          <option value="DiveBomber" disabled class="disabled-option">Dive Bombers</option>
-          <option value="11.88">SB2C Helldiver</option>
-          <option value="10.44">Comet / D4Y Suisei</option>
-          <option value="11.11">Fairey Firefly</option>
-          <option value="10.38">Fairey Barracuda (831 Squadron)</option>
-          <option value="9.18">Fairey Fulmar</option>
-          <option value="11.71">SBD Dauntless (McClusky)</option>
-          <!-- Torpedo Bomber -->
-          <option value="TorpedoBomber" disabled class="disabled-option">Torpedo Bombers</option>
-          <option value="10.31">Barracuda</option>
-          <option value="9.98">Fairey Albacore</option>
-          <option value="11.37">Aichi B7A Ryusei</option>
-          <option value="10.97">Swordfish (818 Squadron)</option>
-          <option value="12.04">TBM Avenger (VT-18 Squadron)</option>
-          <option value="12.04">Torpedo VT-8 Squadron</option>
-
-          <!-- ETC -->
-          <option value="Don't Use Slot">Don't Use Slot</option>
-          <option value="">Other</option>
         </select>
 
         <input type="plane3number" size="3" name="plane3number" id="plane3number" value="3">
       </div>
 
       <div class="column">
-        <input type="text" size="7" name="character-rld" id="character-rld" value="131" onchange="calculateRld()">
+        <input type="text" size="7" name="character-rld" id="character-rld" value="0" onchange="calculateRld()">
         <div class="space"></div>
         <input type="text" size="7" name="custom-character-rld" id="custom-character-rld" value="0"
           onchange="calculateRld()">
         <div class="space"></div>
-        <input type="text" size="7" name="plane1cd" id="plane1cd" value="10.90" onchange="calculateRld()">
+        <input type="text" size="7" name="plane1cd" id="plane1cd" value="0" onchange="calculateRld()">
         <div class="space"></div>
-        <input type="text" size="7" name="plane2cd" id="plane2cd" value="10.90" onchange="calculateRld()">
+        <input type="text" size="7" name="plane2cd" id="plane2cd" value="0" onchange="calculateRld()">
         <div class="space"></div>
-        <input type="text" size="7" name="plane3cd" id="plane3cd" value="10.90" onchange="calculateRld()">
+        <input type="text" size="7" name="plane3cd" id="plane3cd" value="0" onchange="calculateRld()">
       </div>
     </div>
 
@@ -239,13 +148,19 @@
     <div class="space"></div>
 
     <div class="rows">
-      Airstrike : <input type="text" size="7" name="totalCD" id="totalCD" value="">
+      Airstrike : <input type="text" size="7" name="totalCD" id="totalCD" value="0">
+    </div>
+    <br>
+
+    <div class="rows">
+      Airstrike : <input type="text" size="7" name="totalCDCustom" id="totalCDCustom" value="0">
     </div>
 
     <div class="space"></div>
 
     <div class="rows">
-      <input type="button" value="CalculateBtn" onclick="calculateRld()">
+      <input type="button" value="Calculate" onclick="calculateRld()">
+      <input type="button" value="Reset" onclick="reset()">
     </div>
 
     <div class="rows">
@@ -253,5 +168,269 @@
     </div>
   </div>
 </body>
+
+<!-- Script list characters -->
+<script type="text/javascript">
+  $(document).ready(function () {
+
+  var list1 = document.getElementById("characters");
+    
+  list1.options[0] = new Option('--Select--', '0');
+  list1.options[1] = new Option('Akagi', '131');
+  list1.options[2] = new Option('Akagi (Muse)', '131');
+  list1.options[3] = new Option('Akagi-chan', '124');
+  list1.options[4] = new Option('Akagi (Muse)', '131');
+  list1.options[5] = new Option('Akagi (Muse) Akagi (Muse)', '131');
+
+  });
+</script>
+
+<!-- <script type="text/javascript">
+  $(document).ready(function () {
+
+    //Build an XML containing Customer records.
+
+    // var xmlDoc = new DOMParser().parseFromString();
+    // var xmlString;
+
+    // var xml = new XMLHttpRequest();
+    // xml.open('GET', 'Aircraft.xml', false)
+
+    // xml.send();
+
+    // xmlString = xml.responseXML;
+
+    // xmlString = (new DOMParser()).parseFromString(xml.responseText, 'text/xml');
+
+    // var data = xmlString.getElementsByTagName("characters");
+
+    // var xhr = new XMLHttpRequest();
+    // xhr.open('GET', 'Aircraft.xml', true);
+
+    // xhr.timeout = 2000; // time in milliseconds
+
+    // xhr.onload = function () {
+    //   // Request finished. Do processing here.
+    //   var xmlString = this.responseXML; // <- Here's your XML file
+    // };
+
+    // xhr.ontimeout = function (e) {
+    //   // XMLHttpRequest timed out. Do something here.
+    // };
+
+    // xhr.send(null);
+    var xml = "<Customers>";
+    xml += "<Customer>";
+    xml += "<CustomerId>1</CustomerId><Name>John Hammond</Name><Country>United States</Country>";
+    xml += "</Customer>";
+    xml += "<Customer>";
+    xml += "<CustomerId>2</CustomerId><Name>Mudassar Khan</Name><Country>India</Country>";
+    xml += "</Customer>"
+    xml += "<Customer>";
+    xml += "<CustomerId>3</CustomerId><Name>Suzanne Mathews</Name><Country>France</Country>";
+    xml += "</Customer>";
+    xml += "<Customer>";
+    xml += "<CustomerId>4</CustomerId><Name>Robert Schidner</Name><Country>Russia</Country>";
+    xml += "</Customer>";
+    xml += "</Customers>";
+
+    // var xmlText = new XMLSerializer().serializeToString(xml);
+
+    // document.addEventListener('DOMContentLoaded', ()=>{
+    //   let url = 'aircraft.xml';
+
+    //   fetch(url).then(Response => Response.text()).then(data =>{
+    //     let parser = new DOMParser();
+    //     let xml = parser.parseFromString(data, "application/xml");
+    //     xml = data;
+    //   })
+    // })
+
+    var xmlDoc = $.parseXML(xml);
+    var customers = $(xmlDoc).find("Customer");
+    var ddl = $("#characters");
+    customers.each(function () {
+      var option = $("<option />");
+
+      //Set Customer Name in Text part.
+      option.html($(this).find("Name").text());
+
+      //Set Customer CustomerId in Value part.
+      option.val($(this).find("CustomerId").text());
+
+      //Add the Option element to DropDownList.
+      ddl.append(option);
+    });
+  });
+</script> -->
+
+
+<!-- <script type="text/javascript">
+  $(document).ready(function() {
+      var spl_data;      
+ 
+      // Loading Country
+      $.get('Locations.xml', function(data) {
+          spl_data = data;
+          var that = $('#CounList');
+          $('CName', spl_data).each(function() {
+              $('<option>').text($(this).text()).appendTo(that); //
+              $('<option>').value($(this).attr('index')).appendTo(that);
+ 
+          });
+      }, 'xml');
+  });
+</script> -->
+
+
+<!-- Script list planes #1-->
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    var list1 = document.getElementById("plane1");
+
+    // Fighters
+    list1.options[0] = new Option("First Slot")
+    list1.options[0].disabled = true;
+    list1.options[1] = new Option("Fighters")
+    list1.options[1].disabled = true;
+
+    list1.options[2] = new Option('F6F Hellcat', '10.90');
+    list1.options[3] = new Option('VF-17 ("Pirate Squad")', '10.20');
+    list1.options[4] = new Option('Seafang', '10.60');
+    list1.options[5] = new Option('Sea Fury', '10.61');
+    list1.options[6] = new Option('A7M Reppuu', '10.44');
+    list1.options[7] = new Option('XF5F Skyrocket', '8.98');
+    list1.options[8] = new Option('Messerschmitt Me-155A', '9.24');
+    list1.options[9] = new Option('F2A Buffalo (Thatch Squadron)', '9.44');
+
+    
+    // Dive Bombers
+    list1.options[10] = new Option("Dive Bombers")
+    list1.options[10].disabled = true;
+    list1.options[11] = new Option('SB2C Helldiver', '11.88');
+    list1.options[12] = new Option('Comet / D4Y Suisei', '10.44');
+    list1.options[13] = new Option('Fairey Firefly', '11.11');
+    list1.options[14] = new Option('Fairey Barracuda (831 Squadron)', '10.38');
+    list1.options[15] = new Option('Fairey Fulmar', '9.18');
+    list1.options[16] = new Option('SBD Dauntless (McClusky)', '11.71');
+
+    // Torpedo Bombers
+    list1.options[17] = new Option("Torpedo Bombers")
+    list1.options[17].disabled = true;
+    list1.options[18] = new Option('Barracuda', '10.31');
+    list1.options[19] = new Option('Fairey Albacore', '9.98');
+    list1.options[20] = new Option('Aichi B7A Ryusei', '11.37');
+    list1.options[21] = new Option('Swordfish (818 Squadron)', '10.97');
+    list1.options[22] = new Option('TBM Avenger (VT-18 Squadron)', '12.04');
+    list1.options[23] = new Option('Torpedo VT-8 Squadron', '12.04');
+
+    // Other
+    list1.options[24] = new Option("Don't use slot")
+    list1.options[24].disabled = true;
+    list1.options[25] = new Option('Other', '0');
+
+  });
+</script>
+
+<!-- Script list planes #2-->
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    var list1 = document.getElementById("plane2");
+
+    // Fighters
+    list1.options[0] = new Option("Second Slot")
+    list1.options[0].disabled = true;
+    list1.options[1] = new Option("Fighters")
+    list1.options[1].disabled = true;
+
+    list1.options[2] = new Option('F6F Hellcat', '10.90');
+    list1.options[3] = new Option('VF-17 ("Pirate Squad")', '10.20');
+    list1.options[4] = new Option('Seafang', '10.60');
+    list1.options[5] = new Option('Sea Fury', '10.61');
+    list1.options[6] = new Option('A7M Reppuu', '10.44');
+    list1.options[7] = new Option('XF5F Skyrocket', '8.98');
+    list1.options[8] = new Option('Messerschmitt Me-155A', '9.24');
+    list1.options[9] = new Option('F2A Buffalo (Thatch Squadron)', '9.44');
+
+    
+    // Dive Bombers
+    list1.options[10] = new Option("Dive Bombers")
+    list1.options[10].disabled = true;
+    list1.options[11] = new Option('SB2C Helldiver', '11.88');
+    list1.options[12] = new Option('Comet / D4Y Suisei', '10.44');
+    list1.options[13] = new Option('Fairey Firefly', '11.11');
+    list1.options[14] = new Option('Fairey Barracuda (831 Squadron)', '10.38');
+    list1.options[15] = new Option('Fairey Fulmar', '9.18');
+    list1.options[16] = new Option('SBD Dauntless (McClusky)', '11.71');
+
+    // Torpedo Bombers
+    list1.options[17] = new Option("Torpedo Bombers")
+    list1.options[17].disabled = true;
+    list1.options[18] = new Option('Barracuda', '10.31');
+    list1.options[19] = new Option('Fairey Albacore', '9.98');
+    list1.options[20] = new Option('Aichi B7A Ryusei', '11.37');
+    list1.options[21] = new Option('Swordfish (818 Squadron)', '10.97');
+    list1.options[22] = new Option('TBM Avenger (VT-18 Squadron)', '12.04');
+    list1.options[23] = new Option('Torpedo VT-8 Squadron', '12.04');
+
+    // Other
+    list1.options[24] = new Option("Don't use slot")
+    list1.options[24].disabled = true;
+    list1.options[25] = new Option('Other', '0');
+
+  });
+</script>
+
+<!-- Script list planes #3-->
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    var list1 = document.getElementById("plane3");
+
+    // Fighters
+    list1.options[0] = new Option("Third Slot")
+    list1.options[0].disabled = true;
+    list1.options[1] = new Option("Fighters")
+    list1.options[1].disabled = true;
+
+    list1.options[2] = new Option('F6F Hellcat', '10.90');
+    list1.options[3] = new Option('VF-17 ("Pirate Squad")', '10.20');
+    list1.options[4] = new Option('Seafang', '10.60');
+    list1.options[5] = new Option('Sea Fury', '10.61');
+    list1.options[6] = new Option('A7M Reppuu', '10.44');
+    list1.options[7] = new Option('XF5F Skyrocket', '8.98');
+    list1.options[8] = new Option('Messerschmitt Me-155A', '9.24');
+    list1.options[9] = new Option('F2A Buffalo (Thatch Squadron)', '9.44');
+
+    
+    // Dive Bombers
+    list1.options[10] = new Option("Dive Bombers")
+    list1.options[10].disabled = true;
+    list1.options[11] = new Option('SB2C Helldiver', '11.88');
+    list1.options[12] = new Option('Comet / D4Y Suisei', '10.44');
+    list1.options[13] = new Option('Fairey Firefly', '11.11');
+    list1.options[14] = new Option('Fairey Barracuda (831 Squadron)', '10.38');
+    list1.options[15] = new Option('Fairey Fulmar', '9.18');
+    list1.options[16] = new Option('SBD Dauntless (McClusky)', '11.71');
+
+    // Torpedo Bombers
+    list1.options[17] = new Option("Torpedo Bombers")
+    list1.options[17].disabled = true;
+    list1.options[18] = new Option('Barracuda', '10.31');
+    list1.options[19] = new Option('Fairey Albacore', '9.98');
+    list1.options[20] = new Option('Aichi B7A Ryusei', '11.37');
+    list1.options[21] = new Option('Swordfish (818 Squadron)', '10.97');
+    list1.options[22] = new Option('TBM Avenger (VT-18 Squadron)', '12.04');
+    list1.options[23] = new Option('Torpedo VT-8 Squadron', '12.04');
+
+    // Other
+    list1.options[24] = new Option("Don't use slot")
+    list1.options[24].disabled = true;
+    list1.options[25] = new Option('Other', '0');
+
+  });
+</script>
 
 </html>
