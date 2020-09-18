@@ -11,21 +11,6 @@
 
   <link rel='shortcut icon' type='image/x-icon' href='../Images/Icon/ChatStamp024_en.ico'>
 
-  <script src="../JavaScript/Navbar.js"></script>
-  <script src="../JavaScript/AirStrikeCalc.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
-
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-
   <title>Air Strike Calculator</title>
 </head>
 
@@ -55,7 +40,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="AzurLaneHub.html">Azur Lane Hub</a>
-            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#"></a>
             <!-- <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Something else here</a> -->
           </div>
@@ -88,8 +73,8 @@
       </div>
 
       <div class="column">
-        <select id="characters" onchange="getCharRld()">
-          <option value="Fighters" disabled class="disabled-option">Fighters</option>
+        <select id="characters" onchange="getCharRld()" data-live-search="true">
+          <option></option>
         </select>
 
         <div class="space"></div>
@@ -169,268 +154,23 @@
   </div>
 </body>
 
-<!-- Script list characters -->
-<script type="text/javascript">
-  $(document).ready(function () {
-
-  var list1 = document.getElementById("characters");
-    
-  list1.options[0] = new Option('--Select--', '0');
-  list1.options[1] = new Option('Akagi', '131');
-  list1.options[2] = new Option('Akagi (Muse)', '131');
-  list1.options[3] = new Option('Akagi-chan', '124');
-  list1.options[4] = new Option('Akagi (Muse)', '131');
-  list1.options[5] = new Option('Akagi (Muse) Akagi (Muse)', '131');
-
-  });
+<!--  -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 </script>
-
-<!-- <script type="text/javascript">
-  $(document).ready(function () {
-
-    //Build an XML containing Customer records.
-
-    // var xmlDoc = new DOMParser().parseFromString();
-    // var xmlString;
-
-    // var xml = new XMLHttpRequest();
-    // xml.open('GET', 'Aircraft.xml', false)
-
-    // xml.send();
-
-    // xmlString = xml.responseXML;
-
-    // xmlString = (new DOMParser()).parseFromString(xml.responseText, 'text/xml');
-
-    // var data = xmlString.getElementsByTagName("characters");
-
-    // var xhr = new XMLHttpRequest();
-    // xhr.open('GET', 'Aircraft.xml', true);
-
-    // xhr.timeout = 2000; // time in milliseconds
-
-    // xhr.onload = function () {
-    //   // Request finished. Do processing here.
-    //   var xmlString = this.responseXML; // <- Here's your XML file
-    // };
-
-    // xhr.ontimeout = function (e) {
-    //   // XMLHttpRequest timed out. Do something here.
-    // };
-
-    // xhr.send(null);
-    var xml = "<Customers>";
-    xml += "<Customer>";
-    xml += "<CustomerId>1</CustomerId><Name>John Hammond</Name><Country>United States</Country>";
-    xml += "</Customer>";
-    xml += "<Customer>";
-    xml += "<CustomerId>2</CustomerId><Name>Mudassar Khan</Name><Country>India</Country>";
-    xml += "</Customer>"
-    xml += "<Customer>";
-    xml += "<CustomerId>3</CustomerId><Name>Suzanne Mathews</Name><Country>France</Country>";
-    xml += "</Customer>";
-    xml += "<Customer>";
-    xml += "<CustomerId>4</CustomerId><Name>Robert Schidner</Name><Country>Russia</Country>";
-    xml += "</Customer>";
-    xml += "</Customers>";
-
-    // var xmlText = new XMLSerializer().serializeToString(xml);
-
-    // document.addEventListener('DOMContentLoaded', ()=>{
-    //   let url = 'aircraft.xml';
-
-    //   fetch(url).then(Response => Response.text()).then(data =>{
-    //     let parser = new DOMParser();
-    //     let xml = parser.parseFromString(data, "application/xml");
-    //     xml = data;
-    //   })
-    // })
-
-    var xmlDoc = $.parseXML(xml);
-    var customers = $(xmlDoc).find("Customer");
-    var ddl = $("#characters");
-    customers.each(function () {
-      var option = $("<option />");
-
-      //Set Customer Name in Text part.
-      option.html($(this).find("Name").text());
-
-      //Set Customer CustomerId in Value part.
-      option.val($(this).find("CustomerId").text());
-
-      //Add the Option element to DropDownList.
-      ddl.append(option);
-    });
-  });
-</script> -->
-
-
-<!-- <script type="text/javascript">
-  $(document).ready(function() {
-      var spl_data;      
- 
-      // Loading Country
-      $.get('Locations.xml', function(data) {
-          spl_data = data;
-          var that = $('#CounList');
-          $('CName', spl_data).each(function() {
-              $('<option>').text($(this).text()).appendTo(that); //
-              $('<option>').value($(this).attr('index')).appendTo(that);
- 
-          });
-      }, 'xml');
-  });
-</script> -->
-
-
-<!-- Script list planes #1-->
-<script type="text/javascript">
-  $(document).ready(function () {
-
-    var list1 = document.getElementById("plane1");
-
-    // Fighters
-    list1.options[0] = new Option("First Slot")
-    list1.options[0].disabled = true;
-    list1.options[1] = new Option("Fighters")
-    list1.options[1].disabled = true;
-
-    list1.options[2] = new Option('F6F Hellcat', '10.90');
-    list1.options[3] = new Option('VF-17 ("Pirate Squad")', '10.20');
-    list1.options[4] = new Option('Seafang', '10.60');
-    list1.options[5] = new Option('Sea Fury', '10.61');
-    list1.options[6] = new Option('A7M Reppuu', '10.44');
-    list1.options[7] = new Option('XF5F Skyrocket', '8.98');
-    list1.options[8] = new Option('Messerschmitt Me-155A', '9.24');
-    list1.options[9] = new Option('F2A Buffalo (Thatch Squadron)', '9.44');
-
-    
-    // Dive Bombers
-    list1.options[10] = new Option("Dive Bombers")
-    list1.options[10].disabled = true;
-    list1.options[11] = new Option('SB2C Helldiver', '11.88');
-    list1.options[12] = new Option('Comet / D4Y Suisei', '10.44');
-    list1.options[13] = new Option('Fairey Firefly', '11.11');
-    list1.options[14] = new Option('Fairey Barracuda (831 Squadron)', '10.38');
-    list1.options[15] = new Option('Fairey Fulmar', '9.18');
-    list1.options[16] = new Option('SBD Dauntless (McClusky)', '11.71');
-
-    // Torpedo Bombers
-    list1.options[17] = new Option("Torpedo Bombers")
-    list1.options[17].disabled = true;
-    list1.options[18] = new Option('Barracuda', '10.31');
-    list1.options[19] = new Option('Fairey Albacore', '9.98');
-    list1.options[20] = new Option('Aichi B7A Ryusei', '11.37');
-    list1.options[21] = new Option('Swordfish (818 Squadron)', '10.97');
-    list1.options[22] = new Option('TBM Avenger (VT-18 Squadron)', '12.04');
-    list1.options[23] = new Option('Torpedo VT-8 Squadron', '12.04');
-
-    // Other
-    list1.options[24] = new Option("Don't use slot")
-    list1.options[24].disabled = true;
-    list1.options[25] = new Option('Other', '0');
-
-  });
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>
-
-<!-- Script list planes #2-->
-<script type="text/javascript">
-  $(document).ready(function () {
-
-    var list1 = document.getElementById("plane2");
-
-    // Fighters
-    list1.options[0] = new Option("Second Slot")
-    list1.options[0].disabled = true;
-    list1.options[1] = new Option("Fighters")
-    list1.options[1].disabled = true;
-
-    list1.options[2] = new Option('F6F Hellcat', '10.90');
-    list1.options[3] = new Option('VF-17 ("Pirate Squad")', '10.20');
-    list1.options[4] = new Option('Seafang', '10.60');
-    list1.options[5] = new Option('Sea Fury', '10.61');
-    list1.options[6] = new Option('A7M Reppuu', '10.44');
-    list1.options[7] = new Option('XF5F Skyrocket', '8.98');
-    list1.options[8] = new Option('Messerschmitt Me-155A', '9.24');
-    list1.options[9] = new Option('F2A Buffalo (Thatch Squadron)', '9.44');
-
-    
-    // Dive Bombers
-    list1.options[10] = new Option("Dive Bombers")
-    list1.options[10].disabled = true;
-    list1.options[11] = new Option('SB2C Helldiver', '11.88');
-    list1.options[12] = new Option('Comet / D4Y Suisei', '10.44');
-    list1.options[13] = new Option('Fairey Firefly', '11.11');
-    list1.options[14] = new Option('Fairey Barracuda (831 Squadron)', '10.38');
-    list1.options[15] = new Option('Fairey Fulmar', '9.18');
-    list1.options[16] = new Option('SBD Dauntless (McClusky)', '11.71');
-
-    // Torpedo Bombers
-    list1.options[17] = new Option("Torpedo Bombers")
-    list1.options[17].disabled = true;
-    list1.options[18] = new Option('Barracuda', '10.31');
-    list1.options[19] = new Option('Fairey Albacore', '9.98');
-    list1.options[20] = new Option('Aichi B7A Ryusei', '11.37');
-    list1.options[21] = new Option('Swordfish (818 Squadron)', '10.97');
-    list1.options[22] = new Option('TBM Avenger (VT-18 Squadron)', '12.04');
-    list1.options[23] = new Option('Torpedo VT-8 Squadron', '12.04');
-
-    // Other
-    list1.options[24] = new Option("Don't use slot")
-    list1.options[24].disabled = true;
-    list1.options[25] = new Option('Other', '0');
-
-  });
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 
-<!-- Script list planes #3-->
-<script type="text/javascript">
-  $(document).ready(function () {
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
-    var list1 = document.getElementById("plane3");
+<script src="../JavaScript/Navbar.js"></script>
+<script src="../JavaScript/AirStrikeCalc.js"></script>
+<script type="text/javascript" src="../JavaScript/List.js"></script>
 
-    // Fighters
-    list1.options[0] = new Option("Third Slot")
-    list1.options[0].disabled = true;
-    list1.options[1] = new Option("Fighters")
-    list1.options[1].disabled = true;
-
-    list1.options[2] = new Option('F6F Hellcat', '10.90');
-    list1.options[3] = new Option('VF-17 ("Pirate Squad")', '10.20');
-    list1.options[4] = new Option('Seafang', '10.60');
-    list1.options[5] = new Option('Sea Fury', '10.61');
-    list1.options[6] = new Option('A7M Reppuu', '10.44');
-    list1.options[7] = new Option('XF5F Skyrocket', '8.98');
-    list1.options[8] = new Option('Messerschmitt Me-155A', '9.24');
-    list1.options[9] = new Option('F2A Buffalo (Thatch Squadron)', '9.44');
-
-    
-    // Dive Bombers
-    list1.options[10] = new Option("Dive Bombers")
-    list1.options[10].disabled = true;
-    list1.options[11] = new Option('SB2C Helldiver', '11.88');
-    list1.options[12] = new Option('Comet / D4Y Suisei', '10.44');
-    list1.options[13] = new Option('Fairey Firefly', '11.11');
-    list1.options[14] = new Option('Fairey Barracuda (831 Squadron)', '10.38');
-    list1.options[15] = new Option('Fairey Fulmar', '9.18');
-    list1.options[16] = new Option('SBD Dauntless (McClusky)', '11.71');
-
-    // Torpedo Bombers
-    list1.options[17] = new Option("Torpedo Bombers")
-    list1.options[17].disabled = true;
-    list1.options[18] = new Option('Barracuda', '10.31');
-    list1.options[19] = new Option('Fairey Albacore', '9.98');
-    list1.options[20] = new Option('Aichi B7A Ryusei', '11.37');
-    list1.options[21] = new Option('Swordfish (818 Squadron)', '10.97');
-    list1.options[22] = new Option('TBM Avenger (VT-18 Squadron)', '12.04');
-    list1.options[23] = new Option('Torpedo VT-8 Squadron', '12.04');
-
-    // Other
-    list1.options[24] = new Option("Don't use slot")
-    list1.options[24].disabled = true;
-    list1.options[25] = new Option('Other', '0');
-
-  });
-</script>
 
 </html>
