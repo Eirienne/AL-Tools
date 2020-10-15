@@ -2,7 +2,7 @@
     margin-top: 5%;
 }
 
-.content {
+#content {
 
     background-color: white;
     height: 750px;
@@ -12,67 +12,56 @@
 
 }
 
-@media screen and (max-width: 800px) {
-    .content {
-        width: 100%;
-        /* The width is 100%, when the viewport is 800px or smaller */
-    }
+#char-icon {
+    display: inline;
 }
 
-.column {
-    width: 33%;
-    text-align: center;
-    margin-top: 10%;
+#char-icon img{
+    width: 50px;
+    height: 50px;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+select {
+    width: 200px;
 }
 
-.rows {
-    text-align: center;
-}
-
-.row3 {
-    text-align: center;
-}
-
-.calculateBtn {
-    text-align: center;
-}
+/* input > text{
+    width: 50px;
+} */
 
 .header-text {
-    margin: 0 auto;
-
     text-align: center;
 }
 
-.characters-reload {
-    margin-top: 50px;
+.inner-block {
+    column-count: 3;
+
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    column-rule-style: solid;
+    column-rule-color: lightcoral;
 }
 
-.plane1 {
-    margin-top: 50px;
+.bot-block {
     text-align: center;
-    justify-content: center;
-    align-items: center;
 }
 
-.plane2 {
-    margin-top: 50px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
+@media screen and (max-width: 800px) {
+    #content {
+        width: 100%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+        font-size: 14px;
+    }
 
-.plane3 {
-    margin-top: 50px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    select {
+        width: 100px;
+    }
+    
+    input {
+        width: 45px;
+    }
+
+    #char-icon {
+        position: absolute;;
+        visibility: hidden;
+    }
 }

@@ -2,144 +2,157 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../CSS/Navbar.css">
-  <link rel="stylesheet" href="../CSS/AirStrikeCalc.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../CSS/Navbar.css" />
+  <link rel="stylesheet" href="../CSS/AirStrikeCalc.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-  <link rel='shortcut icon' type='image/x-icon' href='../Images/Icon/ChatStamp024_en.ico'>
+  <link rel="shortcut icon" type="image/x-icon" href="../Images/Icon/ChatStamp024_en.ico" />
 
   <title>Air Strike Calculator</title>
 </head>
 
-<body style="background-color: rgba(255, 164, 187, 0.87);">
-
+<body style="background-color: rgba(255, 164, 187, 0.87)">
   <!-- Navbar -->
-  <div id="nav-placeholder-pages">
+  <div id="nav-placeholder-pages"></div>
 
-  </div>
+  <div class="space"></div>
 
-  <div class="space">
-
-  </div>
-
-  <div class="content">
+  <div id="content">
     <h1 class="header-text">Air Strike CoolDown Calculator [W.I.P]</h1>
-    <div class="row">
-      <div class="column">
-        <label class="text">Character Reload Stat : &MediumSpace;</label>
+
+    <div class="space"></div>
+
+    <div class="inner-block">
+      <div class="col1">
+        <label class="text">Character Reload Stat &MediumSpace;</label>
+
         <div class="space"></div>
-        <label class="text">Custom Reload Stat : &MediumSpace;</label>
+
+        <label class="text">Custom Reload Stat &MediumSpace;</label>
+
         <div class="space"></div>
-        <label class="text">First Plane Slot : &MediumSpace;</label>
+
+        <label class="text">First Plane Slot &MediumSpace;</label>
+
         <div class="space"></div>
-        <label class="text">Second Plane Slot : &MediumSpace;</label>
+
+        <label class="text">Second Plane Slot &MediumSpace;</label>
+
         <div class="space"></div>
-        <label class="text">Third Plane Slot : &MediumSpace;</label>
-        <div class="space"></div>
+
+        <label class="text">Third Plane Slot &MediumSpace;</label>
       </div>
 
-      <div class="column">
-        <select id="characters" onchange="getCharRld()" data-live-search="true">
+      <div class="col2">
+        <div id="char-icon">
+          <img id="char-icon-img" src="../Images/Logo/None.png" alt="">
+        </div>
+        <select id="characters" onchange="getCharRld(); getSlot(this);" data-live-search="true">
           <option></option>
         </select>
 
         <div class="space"></div>
 
-        <div>
-          Input Custom Stat
-        </div>
+        <div>Input Custom Stat</div>
 
         <div class="space"></div>
 
         <!-- Plane 1 -->
-        <select id="plane1" onchange="getPlaneCD();">
-        </select>
+        <select id="plane1" onchange="getPlaneCD();"></select>
 
-        <input type="plane1number" size="3" name="plane1number" id="plane1number" value="3">
+        <input type="plane1number" size="3" name="plane1number" id="plane1number" value="0"/>
 
         <div class="space"></div>
 
         <!-- Plane 2 -->
-        <select id="plane2" onchange="getPlane2CD();">
-        </select>
+        <select id="plane2" onchange="getPlane2CD();"></select>
 
-        <input type="plane2number" size="3" name="plane2number" id="plane2number" value="3">
+        <input type="plane2number" size="3" name="plane2number" id="plane2number" value="0" />
 
         <div class="space"></div>
         <!-- Plane 3 -->
-        <select id="plane3" onchange="getPlane3CD();">
-        </select>
+        <select id="plane3" onchange="getPlane3CD();"></select>
 
-        <input type="plane3number" size="3" name="plane3number" id="plane3number" value="3">
+        <input type="plane3number" size="3" name="plane3number" id="plane3number" value="0" />
       </div>
 
-      <div class="column">
-        <input type="text" size="7" name="character-rld" id="character-rld" value="0" onchange="calculateRld()">
+      <div class="col3">
+        <input type="text" size="7" name="character-rld" id="character-rld" value="0" onchange="calculateRld()" />
         <div class="space"></div>
         <input type="text" size="7" name="custom-character-rld" id="custom-character-rld" value="0"
-          onchange="calculateRld()">
+          onchange="calculateRld()" />
         <div class="space"></div>
-        <input type="text" size="7" name="plane1cd" id="plane1cd" value="0" onchange="calculateRld()">
+        <input type="text" size="7" name="plane1cd" id="plane1cd" value="0" onchange="calculateRld()" />
         <div class="space"></div>
-        <input type="text" size="7" name="plane2cd" id="plane2cd" value="0" onchange="calculateRld()">
+        <input type="text" size="7" name="plane2cd" id="plane2cd" value="0" onchange="calculateRld()" />
         <div class="space"></div>
-        <input type="text" size="7" name="plane3cd" id="plane3cd" value="0" onchange="calculateRld()">
+        <input type="text" size="7" name="plane3cd" id="plane3cd" value="0" onchange="calculateRld()" />
+      </div>
+
+
+    </div>
+
+    <div class="space"></div>
+
+    <div class="bot-block">
+      <div>
+        <label>Skill Bonus</label>
+        <input type="text" size="3" value="0" id="skill-bonus">
+        <label>%</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="akaga" name="akaga" value="0.5" onchange="calculateRld()" />
+        <label for="akaga"> Akaga CD Reduction</label>
+        <input type="checkbox" id="beacon" name="beacon" value="0.04" onchange="calculateRld()" />
+        <label for="beacon"> Homing Beacon</label>
+      </div>
+
+      <div class="space"></div>
+
+      <label for="">Airstrike : </label>
+      <label id="totalCD">0</label>
+      <label for="">| Custom Airstrike : </label>
+      <label id="totalCDCustom">0</label>
+      <div>
+        <label>P.S All of these stats are maxed out | Character = Lvl. 120 & Gear at +10</label>
+      </div>
+
+      <br>
+
+      <div class="rows">
+        <input type="button" value="Calc" onclick="calculateRld()" />
+        <input type="button" value="Reset" onclick="reset()" />
+      </div>
+
+      <div class="space"></div>
+
+      <div class="rows">
+        <a onclick="updateLog()">Update Log</a>
       </div>
     </div>
 
-    <!-- <div class="space"></div> -->
-
-    <div class="rows">
-      <input type="checkbox" id="akaga" name="akaga" value="0.5" onchange="calculateRld();">
-      <label for="akaga"> Akaga CD Reduction</label>
-      <input type="checkbox" id="beacon" name="beacon" value="0.04" onchange="calculateRld()">
-      <label for="beacon"> Homing Beacon</label>
-    </div>
-
-    <div class="space"></div>
-
-    <div class="rows">
-      Airstrike : <input type="text" size="7" name="totalCD" id="totalCD" value="0">
-    </div>
-    <br>
-
-    <div class="rows">
-      Airstrike : <input type="text" size="7" name="totalCDCustom" id="totalCDCustom" value="0">
-    </div>
-
-    <div class="space"></div>
-
-    <div class="rows">
-      <input type="button" value="Calculate" onclick="calculateRld()">
-      <input type="button" value="Reset" onclick="reset()">
-    </div>
-
-    <div class="rows">
-      <a href="../index.html">Update Log</a>
-    </div>
   </div>
 </body>
 
 <!--  -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-</script>
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-</script>
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-</script>
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
 <script src="../JavaScript/Navbar.js"></script>
 <script src="../JavaScript/AirStrikeCalc.js"></script>
-<script type="text/javascript" src="../JavaScript/List.js"></script>
-
+<script type="text/javascript" src="../JavaScript/ListCV-L.js"></script>
+<script type="text/javascript" src="../JavaScript/ListPlanes.js"></script>
+<script type="text/javascript" src="../JavaScript/ALCharDetail.js"></script>
 
 </html>

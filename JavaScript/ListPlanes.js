@@ -1,16 +1,4 @@
-// List CV/CVL Characters and their CD stats
-$(document).ready(function () {
 
-    var list1 = document.getElementById("characters");
-
-    list1.options[0] = new Option('--Select--', '0');
-    list1.options[1] = new Option('Akagi', '131');
-    list1.options[2] = new Option('Akagi (Muse)', '131');
-    list1.options[3] = new Option('Akagi-chan', '124');
-    list1.options[4] = new Option('Akagi (Muse)', '131');
-    list1.options[5] = new Option('Akagi (Muse) Akagi (Muse)', '131');
-
-});
 
 // List of planes slot 1
 $(document).ready(function () {
