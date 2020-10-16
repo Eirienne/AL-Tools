@@ -6,7 +6,7 @@ $(function () {
 });
 
 $(function () {
-    $("#nav-placeholder-pages").load("Template/navbarPages.html");
+    $("#nav-placeholder-pages").load("Template/NavbarPages.html");
 });
 
 $(function () {
