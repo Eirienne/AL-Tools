@@ -2,11 +2,15 @@
 toggle between hiding and showing the dropdown content */
 
 $(function () {
-    $("#nav-placeholder-index").load("Pages/NavbarHome.html");
+    $("#nav-placeholder-home").load("Pages/Template/NavbarHome.html");
 });
 
 $(function () {
-    $("#nav-placeholder-pages").load("NavbarPages.html");
+    $("#nav-placeholder-pages").load("Template/navbarPages.html");
+});
+
+$(function () {
+    $("#nav-placeholder-azurlane").load("../Template/NavbarAzurLane.html");
 });
 
 function myFunction() {

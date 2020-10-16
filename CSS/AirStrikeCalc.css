@@ -45,15 +45,20 @@ select {
     text-align: center;
 }
 
+.footer {
+    visibility: hidden;
+}
+
 @media screen and (max-width: 800px) {
     #content {
         width: 100%;
         /* The width is 100%, when the viewport is 800px or smaller */
-        font-size: 14px;
+        height: 90%;
+        font-size: 12px;
     }
 
     select {
-        width: 100px;
+        width: 75px;
     }
     
     input {
@@ -63,5 +68,10 @@ select {
     #char-icon {
         position: absolute;;
         visibility: hidden;
+    }
+
+    .footer {
+        text-align: center;
+        visibility: visible;
     }
 }
