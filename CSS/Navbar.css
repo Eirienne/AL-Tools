@@ -1,15 +1,25 @@
 .navbar {
-  border-style: dotted;
+  border-style: ridge;
+  border-color: rgb(229, 135, 174);
 }
 
 .navbar-brand img {
   width: 50px;
   height: 50px;
 }
+.navbar-text {
+  font-style: italic;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 @media screen and (max-width: 800px) {
 
   .navbar {
-      text-align: center;
+    text-align: center;
+  }
+
+  .navbar .dropdown-item{
+    text-align: center;
   }
 }

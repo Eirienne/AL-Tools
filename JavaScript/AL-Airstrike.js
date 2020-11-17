@@ -11,7 +11,7 @@ function updateLog() {
     + "</center>"
     + "<center>"
     + "<a href="
-    + "AirStrikeCalc.html"
+    + "AL-Hub.html"
     + ">Return</a>"
     + "</center>"
     ;
@@ -104,7 +104,7 @@ function reset() {
     document.getElementById("plane2cd").value = 0;
     document.getElementById("plane3cd").value = 0;
 
-    document.getElementById("totalCD").value = 0;
+    document.getElementById("totalCD").innerText = 0;
 
-    document.getElementById("totalCDCustom").value = 0;
+    document.getElementById("totalCDCustom").innerText = 0;
 }

@@ -75,3 +75,36 @@ select {
         visibility: visible;
     }
 }
+
+@media screen and (max-width: 375px) {
+    #content {
+        width: 100%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+        height: 90%;
+        font-size: 10px;
+    }
+
+    select {
+        width: 75px;
+    }
+    
+    input {
+        width: 33px;
+        text-align: center;
+    }
+
+    input .button {
+        width: 50px;
+        text-align: center;
+    }
+
+    #char-icon {
+        position: absolute;;
+        visibility: hidden;
+    }
+
+    .footer {
+        text-align: center;
+        visibility: visible;
+    }
+}

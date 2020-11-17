@@ -2,15 +2,7 @@
 toggle between hiding and showing the dropdown content */
 
 $(function () {
-    $("#nav-placeholder-home").load("Pages/Template/NavbarHome.html");
-});
-
-$(function () {
-    $("#nav-placeholder-pages").load("Template/NavbarPages.html");
-});
-
-$(function () {
-    $("#nav-placeholder-azurlane").load("../Template/NavbarAzurLane.html");
+    $("#navbar-placeholder").load("Navbar.html");
 });
 
 function myFunction() {
@@ -28,3 +20,9 @@ window.onclick = function (e) {
         }
     }
 }
+
+// if ($(window).width() < 1024) {
+//     $(".page-wrapper").removeClass("toggled");
+// } else if ($(window).width() > 1024){
+//     // $(".page-wrapper").addClass("toggled");
+// }
