@@ -6,7 +6,7 @@ $("#characters").change(function () {
         var img = document.getElementById("char-icon-img")
         // console.log(characters);
 
-        $.getJSON("JSON/AL-char.json", function (data) {
+        $.getJSON("JSON/AL-Char.json", function (data) {
 
             var char = data;
 
