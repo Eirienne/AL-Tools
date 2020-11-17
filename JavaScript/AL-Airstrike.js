@@ -11,7 +11,7 @@ function updateLog() {
     + "</center>"
     + "<center>"
     + "<a href="
-    + "AL-Hub.html"
+    + "AL-Airstrike.html"
     + ">Return</a>"
     + "</center>"
     ;
