@@ -90,10 +90,20 @@ function calculateRld() {
         temp = total - (total * akagaValue)
         total = total - (total * beaconValue);
     }
+    // console.log(total);
+    // console.log(totalCustom);
+    // if (total = 0) {
+    //     total = 0;
+    // }
+    // if (totalCustom = 0) {
+    //     totalCustom = 0;
+    // }else {
 
+    // }
     document.getElementById("totalCD").innerText = (total);
 
     document.getElementById("totalCDCustom").innerText = totalCustom;
+
 
 }
 

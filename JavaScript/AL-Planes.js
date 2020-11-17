@@ -1,145 +1,48 @@
-
-
-// List of planes slot 1
+// List of planes
 $(document).ready(function () {
 
     var list1 = document.getElementById("plane1");
+    var list2 = document.getElementById("plane2");
+    var list3 = document.getElementById("plane3");
 
-    // Fighters
+    // Slot Prefix
     list1.options[0] = new Option("First Slot")
     list1.options[0].disabled = true;
-    list1.options[1] = new Option("Fighters")
-    list1.options[1].disabled = true;
+    list2.options[0] = new Option("Second Slot")
+    list2.options[0].disabled = true;
+    list3.options[0] = new Option("Third Slot")
+    list3.options[0].disabled = true;
 
-    list1.options[2] = new Option('F6F Hellcat', '10.90');
-    list1.options[3] = new Option('VF-17 ("Pirate Squad")', '10.20');
-    list1.options[4] = new Option('Seafang', '10.60');
-    list1.options[5] = new Option('Sea Fury', '10.61');
-    list1.options[6] = new Option('A7M Reppuu', '10.44');
-    list1.options[7] = new Option('XF5F Skyrocket', '8.98');
-    list1.options[8] = new Option('Messerschmitt Me-155A', '9.24');
-    list1.options[9] = new Option('F2A Buffalo (Thatch Squadron)', '9.44');
+    var $select1 = $("#plane1");
+    var $select2 = $("#plane2");
+    var $select3 = $("#plane3");
 
+    $.getJSON("JSON/AL-Planes.json", function (data) {
 
-    // Dive Bombers
-    list1.options[10] = new Option("Dive Bombers")
-    list1.options[10].disabled = true;
-    list1.options[11] = new Option('SB2C Helldiver', '11.88');
-    list1.options[12] = new Option('Comet / D4Y Suisei', '10.44');
-    list1.options[13] = new Option('Fairey Firefly', '11.11');
-    list1.options[14] = new Option('Fairey Barracuda (831 Squadron)', '10.38');
-    list1.options[15] = new Option('Fairey Fulmar', '9.18');
-    list1.options[16] = new Option('SBD Dauntless (McClusky)', '11.71');
+        var char = data;
+        var tempType = "Fighters";
+        $.each(char, function () {
+            // console.log(this.type + "Type")
+            // console.log(tempType + "Temp");
+            if (this.reload == 0 && this.type != "Don't Use") {
+                tempType = this.type;
+                $select1.append('<option disabled value=' + this.reload + '>' + this.name + '</option>');
+                $select2.append('<option disabled value=' + this.reload + '>' + this.name + '</option>');
+                $select3.append('<option disabled value=' + this.reload + '>' + this.name + '</option>');
+            }
+            else if (tempType == this.type) {
+                $select1.append('<option value=' + this.reload + '>' + this.name + '</option>');
+                $select2.append('<option value=' + this.reload + '>' + this.name + '</option>');
+                $select3.append('<option value=' + this.reload + '>' + this.name + '</option>');
+            } else {
+                tempType = this.type;
+                $select1.append('<option disabled value=' + this.reload + '>' + this.name + '</option>');
+                $select2.append('<option disabled value=' + this.reload + '>' + this.name + '</option>');
+                $select3.append('<option disabled value=' + this.reload + '>' + this.name + '</option>');
+            }
+        });
 
-    // Torpedo Bombers
-    list1.options[17] = new Option("Torpedo Bombers")
-    list1.options[17].disabled = true;
-    list1.options[18] = new Option('Barracuda', '10.31');
-    list1.options[19] = new Option('Fairey Albacore', '9.98');
-    list1.options[20] = new Option('Aichi B7A Ryusei', '11.37');
-    list1.options[21] = new Option('Swordfish (818 Squadron)', '10.97');
-    list1.options[22] = new Option('TBM Avenger (VT-18 Squadron)', '12.04');
-    list1.options[23] = new Option('Torpedo VT-8 Squadron', '12.04');
-
-    // Other
-    list1.options[24] = new Option("Don't use slot")
-    list1.options[24].disabled = true;
-    list1.options[25] = new Option('Other', '0');
-
-});
-
-// List of planes slot 2
-$(document).ready(function () {
-
-    var list1 = document.getElementById("plane2");
-
-    // Fighters
-    list1.options[0] = new Option("Second Slot")
-    list1.options[0].disabled = true;
-    list1.options[1] = new Option("Fighters")
-    list1.options[1].disabled = true;
-
-    list1.options[2] = new Option('F6F Hellcat', '10.90');
-    list1.options[3] = new Option('VF-17 ("Pirate Squad")', '10.20');
-    list1.options[4] = new Option('Seafang', '10.60');
-    list1.options[5] = new Option('Sea Fury', '10.61');
-    list1.options[6] = new Option('A7M Reppuu', '10.44');
-    list1.options[7] = new Option('XF5F Skyrocket', '8.98');
-    list1.options[8] = new Option('Messerschmitt Me-155A', '9.24');
-    list1.options[9] = new Option('F2A Buffalo (Thatch Squadron)', '9.44');
-
-
-    // Dive Bombers
-    list1.options[10] = new Option("Dive Bombers")
-    list1.options[10].disabled = true;
-    list1.options[11] = new Option('SB2C Helldiver', '11.88');
-    list1.options[12] = new Option('Comet / D4Y Suisei', '10.44');
-    list1.options[13] = new Option('Fairey Firefly', '11.11');
-    list1.options[14] = new Option('Fairey Barracuda (831 Squadron)', '10.38');
-    list1.options[15] = new Option('Fairey Fulmar', '9.18');
-    list1.options[16] = new Option('SBD Dauntless (McClusky)', '11.71');
-
-    // Torpedo Bombers
-    list1.options[17] = new Option("Torpedo Bombers")
-    list1.options[17].disabled = true;
-    list1.options[18] = new Option('Barracuda', '10.31');
-    list1.options[19] = new Option('Fairey Albacore', '9.98');
-    list1.options[20] = new Option('Aichi B7A Ryusei', '11.37');
-    list1.options[21] = new Option('Swordfish (818 Squadron)', '10.97');
-    list1.options[22] = new Option('TBM Avenger (VT-18 Squadron)', '12.04');
-    list1.options[23] = new Option('Torpedo VT-8 Squadron', '12.04');
-
-    // Other
-    list1.options[24] = new Option("Don't use slot")
-    list1.options[24].disabled = true;
-    list1.options[25] = new Option('Other', '0');
-
-});
-
-// List of planes slot 3
-$(document).ready(function () {
-
-    var list1 = document.getElementById("plane3");
-
-    // Fighters
-    list1.options[0] = new Option("Third Slot")
-    list1.options[0].disabled = true;
-    list1.options[1] = new Option("Fighters")
-    list1.options[1].disabled = true;
-
-    list1.options[2] = new Option('F6F Hellcat', '10.90');
-    list1.options[3] = new Option('VF-17 ("Pirate Squad")', '10.20');
-    list1.options[4] = new Option('Seafang', '10.60');
-    list1.options[5] = new Option('Sea Fury', '10.61');
-    list1.options[6] = new Option('A7M Reppuu', '10.44');
-    list1.options[7] = new Option('XF5F Skyrocket', '8.98');
-    list1.options[8] = new Option('Messerschmitt Me-155A', '9.24');
-    list1.options[9] = new Option('F2A Buffalo (Thatch Squadron)', '9.44');
-
-    
-    // Dive Bombers
-    list1.options[10] = new Option("Dive Bombers")
-    list1.options[10].disabled = true;
-    list1.options[11] = new Option('SB2C Helldiver', '11.88');
-    list1.options[12] = new Option('Comet / D4Y Suisei', '10.44');
-    list1.options[13] = new Option('Fairey Firefly', '11.11');
-    list1.options[14] = new Option('Fairey Barracuda (831 Squadron)', '10.38');
-    list1.options[15] = new Option('Fairey Fulmar', '9.18');
-    list1.options[16] = new Option('SBD Dauntless (McClusky)', '11.71');
-
-    // Torpedo Bombers
-    list1.options[17] = new Option("Torpedo Bombers")
-    list1.options[17].disabled = true;
-    list1.options[18] = new Option('Barracuda', '10.31');
-    list1.options[19] = new Option('Fairey Albacore', '9.98');
-    list1.options[20] = new Option('Aichi B7A Ryusei', '11.37');
-    list1.options[21] = new Option('Swordfish (818 Squadron)', '10.97');
-    list1.options[22] = new Option('TBM Avenger (VT-18 Squadron)', '12.04');
-    list1.options[23] = new Option('Torpedo VT-8 Squadron', '12.04');
-
-    // Other
-    list1.options[24] = new Option("Don't use slot")
-    list1.options[24].disabled = true;
-    list1.options[25] = new Option('Other', '0');
-
-  });
+    }).fail(function () {
+        console.log("An error has occurred.");
+    });
+})

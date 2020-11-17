@@ -49,7 +49,7 @@
         <div id="char-icon">
           <img id="char-icon-img" src="Images/Logo/None.png" alt="">
         </div>
-        <select id="characters" onchange="getCharRld(); getSlot(this);" data-live-search="true">
+        <select id="characters" onchange="getCharRld(); calculateRld();" data-live-search="true">
           <option></option>
         </select>
 
@@ -60,20 +60,20 @@
         <div class="space"></div>
 
         <!-- Plane 1 -->
-        <select id="plane1" onchange="getPlaneCD();"></select>
+        <select id="plane1" onchange="getPlaneCD(); calculateRld();"></select>
 
         <input type="plane1number" size="3" name="plane1number" id="plane1number" value="0"/>
 
         <div class="space"></div>
 
         <!-- Plane 2 -->
-        <select id="plane2" onchange="getPlane2CD();"></select>
+        <select id="plane2" onchange="getPlane2CD(); calculateRld();"></select>
 
         <input type="plane2number" size="3" name="plane2number" id="plane2number" value="0" />
 
         <div class="space"></div>
         <!-- Plane 3 -->
-        <select id="plane3" onchange="getPlane3CD();"></select>
+        <select id="plane3" onchange="getPlane3CD(); calculateRld();"></select>
 
         <input type="plane3number" size="3" name="plane3number" id="plane3number" value="0" />
       </div>
@@ -140,7 +140,7 @@
   <br>
 
   <div class="footer">
-    <button>Back to Azur Lane Hub</button>
+    <button><a href="AL-Hub.html">Back to Azur Lane Hub</a></button>
   </div>
 </body>
 

@@ -4,28 +4,38 @@ $("#characters").change(function () {
         characters += $(this).text();
 
         var img = document.getElementById("char-icon-img")
-        console.log(characters);
-        switch (characters) {
-            case "--Select--":
-                img.src = "Images/Logo/None.png";
-                document.getElementById("plane1number").value = 0;
-                document.getElementById("plane2number").value = 0;
-                document.getElementById("plane3number").value = 0;
-                break;
+        // console.log(characters);
 
-            case "Akagi":
-                img.src = "Images/AzurLane/Icon/AkagiIcon.png";
-                document.getElementById("plane1number").value = 3;
-                document.getElementById("plane2number").value = 3;
-                document.getElementById("plane3number").value = 2;
-                break;
+        $.getJSON("JSON/AL-char.json", function (data) {
 
-            case "Akagi (Muse)":
-                img.src = "Images/AzurLane/Icon/Akagi_µIcon.png";
-                document.getElementById("plane1number").value = 3;
-                document.getElementById("plane2number").value = 3;
-                document.getElementById("plane3number").value = 2;
-                break;
-        };
+            var char = data;
+
+            $.each(char, function () {
+                // console.log(this.name);
+                // console.log(this.reload);
+
+                if (characters == this.name) {
+                    // console.log(this.image);
+                    if (this.image == null) {
+                        this.image = "Images/Logo/None.png"
+                    }
+
+                    img.src = this.image;
+
+                    if (this.slot1 == null || this.slot2 == null || this.slot3 == null) {
+                        this.slot1 = 0;
+                        this.slot2 = 0;
+                        this.slot3 = 0;
+                    }
+
+                    document.getElementById("plane1number").value = this.slot1;
+                    document.getElementById("plane2number").value = this.slot2;
+                    document.getElementById("plane3number").value = this.slot3;
+                }
+            });
+
+        }).fail(function () {
+            console.log("An error has occurred.");
+        });
     });
 })

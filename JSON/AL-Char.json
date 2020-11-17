@@ -1,0 +1,282 @@
+[
+    {
+        "name" : "Akagi",
+        "image" : "Images/AzurLane/Icon/AkagiIcon.png",
+        "reload" : 131,
+        "slot1" : 3,
+        "slot2" : 3,
+        "slot3" : 2
+    },
+    {
+        "name" : "Akagi (Muse)",
+        "image" : "Images/AzurLane/Icon/Akagi_µIcon.png",
+        "reload" : 131,
+        "slot1" : 3,
+        "slot2" : 3,
+        "slot3" : 1
+    },
+    {
+        "name" : "Akagi-chan",
+        "reload" : 124
+    },
+    {
+        "name" : "Anniversary Kizuna AI",
+        "reload" : 120
+    },
+    {
+        "name" : "Ark Royal",
+        "reload" : 117
+    },
+    {
+        "name" : "Bataan",
+        "reload" : 199
+    },
+    {
+        "name" : "Bearn",
+        "reload" : 110
+    },
+    {
+        "name" : "Bogue",
+        "reload" : 179
+    },
+    {
+        "name" : "Bogue (Retrofit)",
+        "reload" : 184
+    },
+    {
+        "name" : "Bunker Hill",
+        "reload" : 131
+    },
+    {
+        "name" : "Casablanca",
+        "reload" : 193
+    },
+    {
+        "name" : "Centaur",
+        "reload" : 160
+    },
+    {
+        "name" : "Chaser",
+        "reload" : 185
+    },
+    {
+        "name" : "Chitose",
+        "reload" : 185
+    },
+    {
+        "name" : "Chiyoda",
+        "reload" : 175
+    },
+    {
+        "name" : "Eagle",
+        "reload" : 112
+    },
+    {
+        "name" : "Enterprise",
+        "reload" : 132
+    },
+    {
+        "name" : "Essex",
+        "reload" : 131
+    },
+    {
+        "name" : "Formidable",
+        "reload" : 117
+    },
+    {
+        "name" : "Fumiruiru",
+        "reload" : 95
+    },
+    {
+        "name" : "Glorious",
+        "reload" : 109
+    },
+    {
+        "name" : "Graf Zeppelin",
+        "reload" : 115
+    },
+    {
+        "name" : "Green Heart",
+        "reload" : 115
+    },
+    {
+        "name" : "Hermes",
+        "reload" : 173
+    },
+    {
+        "name" : "Hermes (Retrofit)",
+        "reload" : 193
+    },
+    {
+        "name" : "Hiryuu",
+        "reload" : 121
+    },
+    {
+        "name" : "Hiryuu (Retrofit)",
+        "reload" : 141
+    },
+    {
+        "name" : "Hiyou",
+        "reload" : 157
+    },
+    {
+        "name" : "Hornet",
+        "reload" : 121
+    },
+    {
+        "name" : "Houshou",
+        "reload" : 176
+    },
+    {
+        "name" : "Illustrious",
+        "reload" : 117
+    },
+    {
+        "name" : "Independence",
+        "reload" : 182
+    },
+    {
+        "name" : "Interpid",
+        "reload" : 131
+    },
+    {
+        "name" : "Junyou",
+        "reload" : 157
+    },
+    {
+        "name" : "Kaga",
+        "reload" : 131
+    },
+    {
+        "name" : "Langley",
+        "reload" : 123
+    },
+    {
+        "name" : "Langley (Retrofit)",
+        "reload" : 128
+    },
+    {
+        "name" : "Lexington",
+        "reload" : 110
+    },
+    {
+        "name" : "Little Illusstrious",
+        "reload" : 110
+    },
+    {
+        "name" : "Long Island",
+        "reload" : 182
+    },
+    {
+        "name" : "Long Island (Retrofit)",
+        "reload" : 187
+    },
+    {
+        "name" : "Murasaki Shion",
+        "reload" : 174
+    },
+    {
+        "name" : "Ookami Mio",
+        "reload" : 117
+    },
+    {
+        "name" : "Perseus",
+        "reload" : 168
+    },
+    {
+        "name" : "Ranger",
+        "reload" : 131
+    },
+    {
+        "name" : "Ranger (Retrofit)",
+        "reload" : 136
+    },
+    {
+        "name" : "Ryuuhou",
+        "reload" : 189
+    },
+    {
+        "name" : "Ryuujou",
+        "reload" : 179
+    },
+    {
+        "name" : "Saraana",
+        "reload" : 156
+    },
+    {
+        "name" : "Saratoga",
+        "reload" : 110
+    },
+    {
+        "name" : "Saratoga (Retrofit)",
+        "reload" : 130
+    },
+    {
+        "name" : "Shangri-La",
+        "reload" : 131
+    },
+    {
+        "name" : "Shinano",
+        "reload" : 126
+    },
+    {
+        "name" : "Shouhou",
+        "reload" : 178
+    },
+    {
+        "name" : "Shouhou (Retrofit)",
+        "reload" : 183
+    },
+    {
+        "name" : "Shoukaku",
+        "reload" : 120
+    },
+    {
+        "name" : "Souryuu",
+        "reload" : 121
+    },
+    {
+        "name" : "Souryuu (Retrofit)",
+        "reload" : 131
+    },
+    {
+        "name" : "Taihou",
+        "reload" : 120
+    },
+    {
+        "name" : "Tokina Sora",
+        "reload" : 123
+    },
+    {
+        "name" : "Unicorn",
+        "reload" : 181
+    },
+    {
+        "name" : "Uruuru",
+        "reload" : 156
+    },
+    {
+        "name" : "Vert",
+        "reload" : 112
+    },
+    {
+        "name" : "Victorious",
+        "reload" : 104
+    },
+    {
+        "name" : "Wasp",
+        "reload" : 117
+    },
+    {
+        "name" : "Yorktown",
+        "reload" : 121
+    },
+    {
+        "name" : "Zeppy",
+        "reload" : 110
+    },
+    {
+        "name" : "Zuikaku",
+        "reload" : 124
+    }
+]

@@ -1,0 +1,127 @@
+[
+    {
+        "type" : "Fighters",
+        "name" : "--Fighters--",
+        "reload" : 0
+    },
+    {
+        "type" : "Fighters",
+        "name" : "F6F Hellcat",
+        "reload" : 10.90
+    },
+    {
+        "type" : "Fighters",
+        "name" : "VF-17 ('Pirate Squad')",
+        "reload" : 10.20
+    },
+    {
+        "type" : "Fighters",
+        "name" : "Seafang",
+        "reload" : 10.60
+    },
+    {
+        "type" : "Fighters",
+        "name" : "Sea Fury",
+        "reload" : 10.61
+    },
+    {
+        "type" : "Fighters",
+        "name" : "A7M Reppuu",
+        "reload" : 10.44
+    },
+    {
+        "type" : "Fighters",
+        "name" : "XFSF Skyrocket",
+        "reload" : 8.98
+    },
+    {
+        "type" : "Fighters",
+        "name" : "Messerschmitt Me-155A",
+        "reload" : 9.24
+    },
+    {
+        "type" : "Fighters",
+        "name" : "F2A Buffalo (Thatch Squadron)",
+        "reload" : 9.44
+    },
+    {
+        "type" : "Dive Bombers",
+        "name" : "--Dive Bombers--",
+        "reload" : 0
+    },
+    {
+        "type" : "Dive Bombers",
+        "name" : "SB2C Helldiver",
+        "reload" : 10.60
+    },
+    {
+        "type" : "Dive Bombers",
+        "name" : "Comet / D4Y Suisei",
+        "reload" : 10.44
+    },
+    {
+        "type" : "Dive Bombers",
+        "name" : "Fairey Firefly",
+        "reload" : 11.11
+    },
+    {
+        "type" : "Dive Bombers",
+        "name" : "Fairey Barracuda (831 Squadron)",
+        "reload" : 10.38
+    },
+    {
+        "type" : "Dive Bombers",
+        "name" : "Fairey Fulmar",
+        "reload" : 9.18
+    },
+    {
+        "type" : "Dive Bombers",
+        "name" : "SBD Dauntless (McClusky)",
+        "reload" : 11.71
+    },
+    {
+        "type" : "Torpedo Bombers",
+        "name" : "--Torpedo Bombers--",
+        "reload" : 0
+    },
+    {
+        "type" : "Torpedo Bombers",
+        "name" : "Barracuda",
+        "reload" : 10.31
+    },
+    {
+        "type" : "Torpedo Bombers",
+        "name" : "Fairey Albacore",
+        "reload" : 9.98
+    },
+    {
+        "type" : "Torpedo Bombers",
+        "name" : "Aichi B7A Ryusei",
+        "reload" : 11.37
+    },
+    {
+        "type" : "Torpedo Bombers",
+        "name" : "Swordfish (818 Squadron)",
+        "reload" : 10.97
+    },
+    {
+        "type" : "Torpedo Bombers",
+        "name" : "TBM Avenger (VT-18 Squadron)",
+        "reload" : 12.04
+    },
+    {
+        "type" : "Torpedo Bombers",
+        "name" : "Torpedo VT-8 Squadron",
+        "reload" : 12.04
+    },
+    {
+        "type" : "Don't Use",
+        "name" : "--Don't Use--",
+        "reload" : 0
+    },
+    {
+        "type" : "Don't Use",
+        "name" : "Other",
+        "reload" : 0
+    }
+]

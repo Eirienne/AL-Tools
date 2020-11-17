@@ -10,6 +10,8 @@
 
     margin: 0 auto;
 
+    border-style: ridge;
+    border-color: lightskyblue;
 }
 
 #char-icon {
