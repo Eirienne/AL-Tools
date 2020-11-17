@@ -4,7 +4,7 @@ $(document).ready(function () {
     var list1 = document.getElementById("characters");
     var $select = $("#characters");
 
-    $.getJSON("JSON/AL-char.json", function(data){
+    $.getJSON("/JSON/AL-char.json", function(data){
 
         var char = data;
 
