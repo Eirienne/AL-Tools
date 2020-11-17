@@ -11,7 +11,7 @@ function getSlot(selection) {
             break;
     
         case "Akagi":
-            img.src = "Images/Azur Lane Characters Icon/AkagiIcon.png";
+            img.src = "../Images/Azur Lane Characters Icon/AkagiIcon.png";
             document.getElementById("plane1number").value = 3;
             document.getElementById("plane2number").value = 3;
             document.getElementById("plane3number").value = 2;         
