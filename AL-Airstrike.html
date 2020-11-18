@@ -5,9 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="CSS/Navbar.css" />
-  <link rel="stylesheet" href="CSS/AirStrikeCalc.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="CSS/AL-Airstrike.css" />
+  <link rel="stylesheet" href="CSS/Home.css">
+  <link rel="stylesheet" href="CSS/Footer.css">
+  <link rel="stylesheet" href="CSS/Bootstrap.css">
+  <link rel="stylesheet" href="CSS/Loader.css">
 
   <link rel="shortcut icon" type="image/x-icon" href="Images/Icon/ChatStamp024_en.ico" />
 
@@ -62,7 +64,7 @@
         <!-- Plane 1 -->
         <select id="plane1" onchange="getPlaneCD(); calculateRld();"></select>
 
-        <input type="plane1number" size="3" name="plane1number" id="plane1number" value="0"/>
+        <input type="plane1number" size="3" name="plane1number" id="plane1number" value="0" />
 
         <div class="space"></div>
 
@@ -102,7 +104,7 @@
         <input type="text" size="3" value="0" id="skill-bonus">
         <label>%</label>
       </div>
-
+      <br>
       <div>
         <input type="checkbox" id="akaga" name="akaga" value="0.5" onchange="calculateRld()" />
         <label for="akaga"> Akaga CD Reduction</label>
@@ -139,18 +141,23 @@
   <!-- <div class="space"></div> -->
   <br>
 
-  <div class="footer">
+  <!-- <div class="footer">
     <button><a href="AL-Hub.html">Back to Azur Lane Hub</a></button>
+  </div> -->
+
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
   </div>
 </body>
 
-<!--  -->
+<!-- Javascript -->
 <script src="JavaScript/JQuery 3_3_1_Slim.js"></script>
 <script src="JavaScript/Bootstrap.js"></script>
 <script src="JavaScript/JQuery 1_8_3.js"></script>
 <script src="JavaScript/Popper 1_14_7.js"></script>
-<script src="JavaScript/AL-Airstrike.js"></script>
 <script src="JavaScript/Navbar.js"></script>
+<script src="JavaScript/Loader.js"></script>
+<script type="text/javascript" src="JavaScript/AL-Airstrike.js"></script>
 <script type="text/javascript" src="JavaScript/AL-Aircraft.js"></script>
 <script type="text/javascript" src="JavaScript/AL-Planes.js"></script>
 <script type="text/javascript" src="JavaScript/AL-CharDetail.js"></script>

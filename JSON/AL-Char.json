@@ -13,7 +13,7 @@
         "reload" : 131,
         "slot1" : 3,
         "slot2" : 3,
-        "slot3" : 1
+        "slot3" : 2
     },
     {
         "name" : "Akagi-chan",
@@ -182,6 +182,10 @@
     {
         "name" : "Perseus",
         "reload" : 168
+    },
+    {
+        "name" : "Princeton",
+        "reload" : 181
     },
     {
         "name" : "Ranger",

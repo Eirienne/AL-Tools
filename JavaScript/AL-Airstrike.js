@@ -6,6 +6,8 @@ function updateLog() {
     + "<h1>Update Log</h1>"
     + "<br>"
     + "<li>2020-10-01 | Update Shinano</li>"
+    + "<li>2020-11-17 | Update Planes List</li>"
+    + "<li>2020-11-18 | Update Princeton</li>"
     + "<br>"
     + "<br>"
     + "</center>"

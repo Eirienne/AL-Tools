@@ -45,6 +45,66 @@
         "reload" : 9.44
     },
     {
+        "type" : "Fighters",
+        "name" : "Kawanishi N1K3-A Shiden Kai 2",
+        "reload" : 10.70
+    },
+    {
+        "type" : "Fighters",
+        "name" : "A6M5 Zero",
+        "reload" : 9.52
+    },
+    {
+        "type" : "Fighters",
+        "name" : "de Havilland Sea Hornet",
+        "reload" : 10.60
+    },
+    {
+        "type" : "Fighters",
+        "name" : "Grumman F4F Wildcat",
+        "reload" : 10.55
+    },
+    {
+        "type" : "Fighters",
+        "name" : "Messerschmitt BF-109T",
+        "reload" : 9.78
+    },
+    {
+        "type" : "Fighters",
+        "name" : "Mitsubishi A6M2 Zero",
+        "reload" : 10.24
+    },
+    {
+        "type" : "Fighters",
+        "name" : "Supermarine Seafire",
+        "reload" : 10.97
+    },
+    {
+        "type" : "Fighters",
+        "name" : "Vought F4U Corsair",
+        "reload" : 11.03
+    },
+    {
+        "type" : "Fighters",
+        "name" : "Brewster F2A Buffalo",
+        "reload" : 11.69
+    },
+    {
+        "type" : "Fighters",
+        "name" : "Gloster Sea Gladiator",
+        "reload" : 10.64
+    },
+    {
+        "type" : "Fighters",
+        "name" : "Gourdou-Leseurre GL.2",
+        "reload" : 11.44
+    },
+    {
+        "type" : "Fighters",
+        "name" : "Mitsubishi A5M Type 96",
+        "reload" : 10.76
+    },
+    {
         "type" : "Dive Bombers",
         "name" : "--Dive Bombers--",
         "reload" : 0
@@ -80,6 +140,31 @@
         "reload" : 11.71
     },
     {
+        "type" : "Dive Bombers",
+        "name" : "Douglas BTD-1 Destroyer",
+        "reload" : 11.71
+    },
+    {
+        "type" : "Dive Bombers",
+        "name" : "Aichi D3A Type 99",
+        "reload" : 10.91
+    },
+    {
+        "type" : "Dive Bombers",
+        "name" : "Junkers Ju-87C",
+        "reload" : 11.57
+    },
+    {
+        "type" : "Dive Bombers",
+        "name" : "Blackburn Skua",
+        "reload" : 11.77
+    },
+    {
+        "type" : "Dive Bombers",
+        "name" : "Douglas SBD Dauntless",
+        "reload" : 12.64
+    },
+    {
         "type" : "Torpedo Bombers",
         "name" : "--Torpedo Bombers--",
         "reload" : 0
@@ -111,8 +196,48 @@
     },
     {
         "type" : "Torpedo Bombers",
-        "name" : "Torpedo VT-8 Squadron",
+        "name" : "Douglas TBD Devastator (VT-8)",
         "reload" : 12.04
+    },
+    {
+        "type" : "Torpedo Bombers",
+        "name" : "Blackburn Firebrand",
+        "reload" : 11.64
+    },
+    {
+        "type" : "Torpedo Bombers",
+        "name" : "Nakajima B5N Type 97",
+        "reload" : 13.33
+    },
+    {
+        "type" : "Torpedo Bombers",
+        "name" : "TBM Avenger (VT-18 Squadron)",
+        "reload" : 12.04
+    },
+    {
+        "type" : "Torpedo Bombers",
+        "name" : "Fairey Swordfish",
+        "reload" : 11.97
+    },
+    {
+        "type" : "Torpedo Bombers",
+        "name" : "Grumman TBF Avenger",
+        "reload" : 14.57
+    },
+    {
+        "type" : "Torpedo Bombers",
+        "name" : "Nakajima B6N Tenzan",
+        "reload" : 11.63
+    },
+    {
+        "type" : "Torpedo Bombers",
+        "name" : "Douglas TBD Devastator",
+        "reload" : 14.10
+    },
+    {
+        "type" : "Torpedo Bombers",
+        "name" : "Levasseur PL.7",
+        "reload" : 14.70
     },
     {
         "type" : "Don't Use",
