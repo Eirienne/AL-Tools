@@ -129,9 +129,9 @@ select {
     #content {
         width: auto;
         height: auto;
-        font-size: 15px;
+        font-size: 11px;
     }
-    
+
     .footer {
         text-align: center;
         visibility: visible;
