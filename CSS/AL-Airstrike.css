@@ -131,12 +131,7 @@ select {
         height: auto;
         font-size: 15px;
     }
-
-    .col3 {
-        padding-top: 4%;
-        margin-right: 40px;
-    }
-
+    
     .footer {
         text-align: center;
         visibility: visible;
