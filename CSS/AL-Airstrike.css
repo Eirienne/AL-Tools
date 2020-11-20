@@ -46,8 +46,45 @@ select {
 .footer {
     visibility: hidden;
 }
+@media screen and (max-width: 320px) {
+    .header-text {
+        font-size: 18px;
+    }
+
+    #content {
+        width: 100%;
+        height: auto;
+        font-size: 5px;
+    }
+
+    .text {
+        font-size: 9px;
+    }
+
+    select {
+        width: 50px;
+    }
+    
+    input {
+        width: 45px;
+    }
+
+    #char-icon {
+        position: absolute;;
+        visibility: hidden;
+    }
+
+    .footer {
+        text-align: center;
+        visibility: visible;
+    }
+}
 
 @media screen and (max-width: 900px) {
+    .header-text {
+        font-size: 30px;
+    }
+
     #content {
         width: 100%;
         height: auto;
