@@ -30,7 +30,7 @@ body {
     width: 30px;
     height: 30px;
     position: absolute;
-    top: 50%;                     /* ******* <- Remove this line ******** */
+    /* top: 50%; */
     border: 4px solid #Fff;
     animation: loader 2s infinite ease;
   }
@@ -42,7 +42,7 @@ body {
     top: 0;
     left: 0;
     background-color: #242f3f;
-    /* display:flex; */
+    display:flex;
     justify-content: center;
     align-items: center;
   }

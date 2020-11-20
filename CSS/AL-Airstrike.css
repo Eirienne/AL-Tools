@@ -27,10 +27,6 @@ select {
     width: 200px;
 }
 
-/* input > text{
-    width: 50px;
-} */
-
 .header-text {
     text-align: center;
 }
@@ -121,6 +117,24 @@ select {
     #char-icon {
         position: absolute;;
         visibility: hidden;
+    }
+
+    .footer {
+        text-align: center;
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #content {
+        width: auto;
+        height: auto;
+        font-size: 15px;
+    }
+
+    .col3 {
+        padding-top: 4%;
+        margin-right: 60px;
     }
 
     .footer {
