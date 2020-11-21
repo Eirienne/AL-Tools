@@ -13,6 +13,14 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.navbar .dropdown-item{
+  text-align: center;
+}
+
+.navbar {
+  text-align: center;
+}
+
 @media screen and (max-width: 900px) {
 
   .navbar {

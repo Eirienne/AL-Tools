@@ -43,6 +43,12 @@ select {
     text-align: center;
 }
 
+.rows input{
+    size: 5px;
+    text-align: center;
+    font-size: auto;
+}
+
 .footer {
     visibility: hidden;
 }
@@ -65,7 +71,7 @@ select {
         width: 50px;
     }
     
-    input {
+    .col3 input {
         width: 45px;
     }
 
@@ -95,7 +101,7 @@ select {
         width: 75px;
     }
     
-    input {
+    .col3 input {
         width: 45px;
     }
 
@@ -121,7 +127,7 @@ select {
         width: 50px;
     }
     
-    input {
+    .col3 input {
         width: 35px;
     }
 
@@ -147,7 +153,7 @@ select {
         width: 50px;
     }
     
-    input {
+    .col3 input {
         width: 35px;
     }
 
