@@ -4,10 +4,10 @@
 Site To-Do List
 - Site Icon
 
-Azur Lane Hub To-Do List
-- Update princenton event
-- All new planes
+Azur Lane Hub To-Do List / Plan
 - Character Icon change when choosing character
+- Characters Story
+- Character / Fleet calculation
 
 #### Special Thanks to Manjuu for these wonderful game called Azur Lane
 ##### Special Thanks to YoStar for English Version
